@@ -254,6 +254,8 @@ footer .wrapper{
     height: 60px;
 }
 
+/*--modale--*/
+
 div.modale{
     position: fixed;
     top: 0;
@@ -276,9 +278,10 @@ div.modale{
 .modale p{
 
     font-weight: bold; 
-     font-size: 16rem;
+     font-size: 50rem;
     color: #C0392B;
-    
+    font-family:"Josefin Sans", sans-serif ;
+
 }
 
 
