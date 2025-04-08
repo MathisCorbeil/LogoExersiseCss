@@ -1,0 +1,287 @@
+/*--------------------------
+BASE
+----------------------------*/
+html{
+
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before,*:after{
+    box-sizing:inherit;
+}
+/*------------------------
+ÉLÉMENTS
+-------------------------*/
+.wrapper{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #474747;
+}
+
+body{
+    background-color: #ECF0F1;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+/*------------------
+COMPONENTS
+-------------------*/
+
+/*--header--*/
+
+header{
+    background-color:white ;
+    border-top: 4px solid red;
+    
+}
+
+header .wrapper{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    
+}
+
+header ul{
+    display:  flex;
+    gap: 10px;
+align-items: center;
+justify-content: center;
+    list-style:none ;
+}
+
+.logo{
+    font: 4.2rem "Josefin Sans", sans-serif;
+    color: black;
+}
+
+header ul a:hover{
+    text-decoration: underline;
+}
+
+/*--hero--*/
+.hero{
+    background: url(../images/bureau.png)  no-repeat center center/cover ;
+
+    
+
+    
+}
+
+.hero .wrapper{
+
+    height: 600px ;
+
+    display: flex;
+    justify-content: flex-end;
+   align-items: center;
+
+    
+    
+}
+
+.box{
+    height: 510px;
+    width: 600px;
+    background-color: rgba(226, 82, 84, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px 30px;
+    color: white;
+   
+}
+
+.box h1{
+    font: bold 4.8rem "Roboto", sans-serif;
+}
+
+.bouton{
+    align-self: flex-end;
+    background-color: #C0392B;
+    width: 110px;
+    height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+ 
+}
+
+.bouton:hover{
+    background-color: white;
+    color: #E25254;
+}
+
+/*---article---*/
+
+h2{
+    font: bold 3.6rem "Josefin Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+h3{
+     font: bold 2.2rem "Josefin Sans", sans-serif;
+     padding-top: 10px;
+
+}
+
+.group-produits{
+    margin:80px 0px ;
+    color: #474747;
+}
+
+.grid-produits{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 37px;
+}
+
+.grid-produits article{
+    background-color: white;
+    color: black;
+    height: 230px;
+    width: 375px;
+    padding:0 30px ;
+}
+
+.icon-produit{
+    display: flex;
+    color: #E25254;
+    gap: 3px;
+    align-items: center;
+    
+   margin-bottom: 25px;
+}
+
+.grid-produits article:hover{
+    background-color: #E25254;
+    color: white;
+}
+.grid-produits article:hover h3{
+    
+    color: white;
+}
+.grid-produits article:hover .material-symbols-outlined{
+    background-color: #E25254;
+    color: white;
+}
+
+.group-produits .wrapper h2 + p {
+    margin: 0 0 30px 0;
+}
+
+/*---asid---*/
+
+.group-conseils{
+    background: #E25254 url(../images/3px-tile\ 28.png) repeat center center/10% ;
+
+    height: 600px;
+    color: white;
+    padding: 50px 0;
+}
+
+.group-conseils .wrapper h2 + p {
+    margin: 20px 0 40px 0;
+}
+
+.grid-conseils{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 37px;
+}
+
+.conseil{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 40fr 275fr;
+    color: black;
+    padding: 30px;
+    width: 375px;
+    height: 335px;
+    padding-bottom: 50px;
+    
+}
+
+.conseil h3{
+    color: #E25254;
+    margin: 0;
+}
+
+.conseil .material-symbols-outlined{
+    color: #474747;
+    font-size: 3.5rem;
+}
+
+.texte-conseil{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.bouton-modale{
+    align-self: flex-end;
+
+}
+.bouton-modale:hover{
+   text-decoration: underline;
+    
+}
+
+/*--footer--*/
+
+footer{
+    background-color: #E25254;
+}
+footer .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 60px;
+}
+
+div.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  
+    
+   
+}
+.modale.visible{
+    display: flex;
+}
+
+.modale p{
+
+    font-weight: bold; 
+     font-size: 16rem;
+    color: #C0392B;
+    font-family:"Josefin Sans", sans-serif ;
+}
+
+
+
+
+
